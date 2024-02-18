@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Stack_app());
+  runApp(const Stack_app());
 }
 
 class Stack_app extends StatelessWidget {
@@ -14,7 +14,7 @@ class Stack_app extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
             appBar: AppBar(
-              title: Text('Stack App'),
+              title: const Text('Stack App'),
               centerTitle: true,
             ),
             body: Center(
@@ -29,13 +29,13 @@ class Stack_app extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.purple,
                         borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(color: Colors.grey,
                           spreadRadius: 1,
                           blurRadius: 10)
                         ]
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal:15,vertical: 5),
                         child: Text('Purple',style: TextStyle(
                           color: Colors.white,
@@ -55,13 +55,13 @@ class Stack_app extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.indigo,
                         borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(color: Colors.grey,
                                 spreadRadius: 1,
                                 blurRadius: 10)
                           ]
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal:15,vertical: 5),
                         child: Text('Indigo',style: TextStyle(
                             color: Colors.white,
@@ -81,13 +81,13 @@ class Stack_app extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.lightBlue,
                         borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(color: Colors.grey,
                                 spreadRadius: 1,
                                 blurRadius: 10)
                           ]
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal:15,vertical: 5),
                         child: Text('LightBlue',style: TextStyle(
                             color: Colors.white,
@@ -107,13 +107,13 @@ class Stack_app extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.green,
                         borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(color: Colors.grey,
                                 spreadRadius: 1,
                                 blurRadius: 10)
                           ]
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal:15,vertical: 5),
                         child: Text('Green',style: TextStyle(
                             color: Colors.white,
@@ -133,13 +133,13 @@ class Stack_app extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.amber,
                         borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(color: Colors.grey,
                                 spreadRadius: 1,
                                 blurRadius: 10)
                           ]
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal:15,vertical: 5),
                         child: Text('Amber',style: TextStyle(
                             color: Colors.white,
@@ -159,13 +159,13 @@ class Stack_app extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.orange,
                         borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(color: Colors.grey,
                                 spreadRadius: 1,
                                 blurRadius: 10)
                           ]
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal:15,vertical: 5),
                         child: Text('Orange',style: TextStyle(
                             color: Colors.white,
@@ -185,13 +185,13 @@ class Stack_app extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.redAccent,
                         borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(color: Colors.grey,
                                 spreadRadius: 1,
                                 blurRadius: 10)
                           ]
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal:15,vertical: 5),
                         child: Text('RedAccent',style: TextStyle(
                             color: Colors.white,
