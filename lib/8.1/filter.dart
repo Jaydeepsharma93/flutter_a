@@ -43,7 +43,7 @@ class _FilterState extends State<Filter> {
               Slider(
                 min: 0,
                 max: 500,
-                divisions: 100,
+                divisions: 5,
                 thumbColor: Colors.blue,
                 activeColor: Colors.blue,
                 value: pr,
