@@ -19,11 +19,11 @@ class _D_rawerState extends State<D_rawer> {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-            backgroundColor: Color(0xff2e2f33),
+            backgroundColor: const Color(0xff2e2f33),
             appBar: AppBar(
-              iconTheme: IconThemeData(color: Colors.white),
+              iconTheme: const IconThemeData(color: Colors.white),
               backgroundColor: Colors.black,
-              title: Text(
+              title: const Text(
                 'Gmail',
                 style: TextStyle(color: Colors.white),
               ),
@@ -31,13 +31,13 @@ class _D_rawerState extends State<D_rawer> {
             drawer: Container(
               height: double.infinity,
               width: 280,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xff2e2f33),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(top: 35, left: 20, bottom: 10),
                     child: Text(
                       'Gmail',
@@ -47,21 +47,29 @@ class _D_rawerState extends State<D_rawer> {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-                  Divider(),
-                  ListTile(
+                  const Divider(),
+                  const ListTile(
                     leading: Icon(Icons.all_inbox, color: Colors.white),
                     title: Text("All Inboxes",
                         style: TextStyle(color: Colors.white)),
                   ),
-                  Divider(),
-                  ListTile(
+                  const Divider(),
+                  const ListTile(
                     leading: Icon(Icons.inbox, color: Colors.white),
                     title: Text("Inbox", style: TextStyle(color: Colors.white)),
                   ),
-                  Divider(),
-                  Column(
-                    children:List.generate(drawer_list.length, (index) => dra_wer(drawer_list[index]['icon'], drawer_list[index]['name']),),
-                  )
+                  const Divider(),
+                    ...List.generate(drawer_list.length, (index) => dra_wer(drawer_list[index]['icon'], drawer_list[index]['name']),),
+                  const Divider(),
+                  const ListTile(
+                    leading: Icon(Icons.add, color: Colors.white),
+                    title: Text("Create new", style: TextStyle(color: Colors.white)),
+                  ),
+                  const Divider(),
+                  const ListTile(
+                    leading: Icon(Icons.settings, color: Colors.white),
+                    title: Text("Settings", style: TextStyle(color: Colors.white)),
+                  ),
                 ],
               ),
             )),
@@ -73,6 +81,6 @@ class _D_rawerState extends State<D_rawer> {
 Widget dra_wer(IconData icon,String name) {
   return ListTile(
     leading: Icon(icon,color: Colors.white,),
-    title: Text(name, style: TextStyle(color: Colors.white)),
+    title: Text(name, style: const TextStyle(color: Colors.white)),
   );
 }
