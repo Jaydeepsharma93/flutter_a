@@ -30,7 +30,7 @@ class Login_page extends StatefulWidget {
   @override
   State<Login_page> createState() => _Login_pageState();
 }
-
+bool isPasswordVisible=true;
 class _Login_pageState extends State<Login_page> {
   @override
   Widget build(BuildContext context) {
@@ -83,8 +83,24 @@ class _Login_pageState extends State<Login_page> {
                   SizedBox(height: height * 0.02),
                   TextField(
                     textInputAction: TextInputAction.done,
+                    obscureText: isPasswordVisible,
                     decoration: InputDecoration(
                       labelText: 'Password',
+                      suffixIcon: IconButton(
+                        icon: (isPasswordVisible)?Icon(Icons.remove_red_eye_outlined):Icon(Icons.remove_red_eye),
+                        onPressed: () {
+                          setState(() {
+                            if(isPasswordVisible)
+                            {
+                              isPasswordVisible = false;
+                            }
+                            else
+                            {
+                              isPasswordVisible = true;
+                            }
+                          });
+                        },
+                      ),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                           borderSide: BorderSide(
@@ -334,8 +350,24 @@ class _Sign_upState extends State<Sign_up> {
                   SizedBox(height: height * 0.02),
                   TextField(
                     textInputAction: TextInputAction.done,
+                    obscureText: isPasswordVisible,
                     decoration: InputDecoration(
                       labelText: 'Password',
+                      suffixIcon: IconButton(
+                        icon: (isPasswordVisible)?Icon(Icons.remove_red_eye_outlined):Icon(Icons.remove_red_eye),
+                        onPressed: () {
+                          setState(() {
+                            if(isPasswordVisible)
+                            {
+                              isPasswordVisible = false;
+                            }
+                            else
+                            {
+                              isPasswordVisible = true;
+                            }
+                          });
+                        },
+                      ),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                           borderSide: BorderSide(
