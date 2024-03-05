@@ -3,6 +3,7 @@
 A new Flutter project.
 
 <img src = "https://github.com/Jaydeepsharma93/flutter_a/assets/143181361/51b7f3f6-18c6-4d7e-892d-a7cc78d02c96" width=30%>
+
 <img src = "https://github.com/Jaydeepsharma93/flutter_a/assets/143181361/56a846c7-1626-42a4-884e-9b6f070bfedf" width=30%>
 
 ## Getting Started
